@@ -15,6 +15,7 @@
     });
 });
 
+
 // Function to display blog posts from localStorage
 function displayBlogs() {
     const blogPostsContainer = document.getElementById('blogPosts');
@@ -24,12 +25,22 @@ function displayBlogs() {
     blogPostsContainer.innerHTML = '<h3>Recent Blogs:</h3>';
     
     // Loop through saved blogs and display them
-    savedBlogs.forEach(blog => {
+    savedBlogs.forEach((blog, index) => {
         const blogDiv = document.createElement('div');
         blogDiv.classList.add('blog-post');
+
+        // Split content into preview and full content
+        const previewContent = blog.content.slice(0, 100); // Show only the first 100 characters
+        const fullContent = blog.content; 
+
         blogDiv.innerHTML = `
             <h4>${blog.title}</h4>
-            <p>${blog.content}</p>
+            <p>
+                ${previewContent}<span class="dots">...</span>
+                <span class="more-text">${fullContent.slice(100)}</span>
+            </p>
+            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            <button onclick="deleteBlog(${index})">Delete</button>
         `;
         blogPostsContainer.appendChild(blogDiv);
     });
@@ -48,6 +59,7 @@ function saveBlogPost(title, content) {
     // Display updated blogs
     displayBlogs();
 }
+
 // Handle form submission
 document.getElementById('blogForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting
@@ -61,10 +73,42 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
     }
 });
 
+// Function to toggle the "Read More" and "Read Less" feature
+function toggleReadMore(button) {
+    const blogPost = button.parentElement;
+    const dots = blogPost.querySelector('.dots');
+    const moreText = blogPost.querySelector('.more-text');
+    
+    if (dots.style.display === 'none') {
+        dots.style.display = 'inline';
+        moreText.style.display = 'none';
+        button.textContent = 'Read More';
+    } else {
+        dots.style.display = 'none';
+        moreText.style.display = 'inline';
+        button.textContent = 'Read Less';
+    }
+}
+
+// Function to delete a blog post
+function deleteBlog(index) {
+    const savedBlogs = JSON.parse(localStorage.getItem('blogs')) || [];
+
+    // Remove the blog at the specified index
+    savedBlogs.splice(index, 1);
+
+    // Save the updated array to localStorage
+    localStorage.setItem('blogs', JSON.stringify(savedBlogs));
+
+    // Refresh the displayed blogs
+    displayBlogs();
+}
+
 // Display blogs on page load
 window.onload = function() {
     displayBlogs();
 };
+
 
 
 //Stress Management

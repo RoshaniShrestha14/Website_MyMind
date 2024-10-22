@@ -316,6 +316,21 @@ section {
     width: auto;
    
 }
+.more-text {
+    display: none;
+}
+
+/* Style for the read more button */
+.read-more-btn {
+    
+        background-color: #789DBC; /* Button color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        border-radius: 5px;
+}
 h3{
     font-size: 22px;
     color: #789DBC;
