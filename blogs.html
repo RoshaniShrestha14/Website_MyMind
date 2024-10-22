@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mymind - Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MyMind</h1>
+        <img src="logo.png" alt="MyMind Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="stress-management.html">Stress Management</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="therapist.html">Contact Therapist</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="mainContent">
+        <section>
+            <div id="content-wrapper">
+            <h2 id="head">
+                <img src="note.png" alt="Blog Icon" class="blog-icon">
+                <span class="circle">B</span>
+                <span class="circle">L</span>
+                <span class="circle">O</span>
+                <span class="circle">G</span>
+            </h2>
+            <div class="container">       
+            <h2>Read and Share Your Thoughts</h2>
+            <form id="blogForm">
+                <label for="blog-title">Blog Title:</label>
+                <input type="text" id="blog-title" name="blog-title" required>
+                <textarea id="blogContent" placeholder="Write your thoughts here..." required></textarea>
+                <button type="submit">Post Blog</button>
+            </form>
+        </div>
+        </section>
+    </div> 
+    <div id="blogPosts">
+        <h3>Recent Blogs:</h3>
+        <!-- Blogs will be dynamically added here -->
+    </div>
+</div>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

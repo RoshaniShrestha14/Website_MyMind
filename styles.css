@@ -1,0 +1,989 @@
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEF9F2; /* Background */
+    
+}
+
+/* Header */
+header {
+    background-color: #789DBC; /* Teal color */
+    padding: 20px;
+    text-align: left;
+    border-radius: 40px; /* Curved corners for the header */
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    color: #FFE3E3;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #FFCBCB; /* Pink button style */
+    color: #333;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #333; /* Darker border for button depth */
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #FFC1C1; /* Lighter pink hover effect */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state styling */
+nav ul li a.active {
+    background-color: #FF9AA2;
+    color: #FFF;
+}
+.logo {
+    position: absolute;
+    left: 89px;
+    height: 90px;
+    width: auto;
+    margin-right: 165px;
+    vertical-align: middle;
+    display: inline-block;
+    
+}
+/* .picture{
+    position: relative;
+    right: 82px;
+    top: -79px;
+    height: fit-content;
+    width: auto;
+} */
+
+/* Content Wrapper Styling */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 40px; /* Add space between image and text */
+}
+
+/* Left Section (Image) */
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    max-width: 153%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: -104px;
+}
+
+/* Homepage Section (Right Section) */
+#homepage {
+    flex: 1;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); /* Example font similar to the image */
+
+#homepage h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #789DBC;
+    margin-left: -290px;
+    margin-top: -234px;
+    /* Shadow Effect */
+    text-shadow: 
+        2px 2px 0px rgba(255, 227, 227, 1), 
+        4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.welcome {
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-size: 72px;
+    text-transform: uppercase;
+    
+}
+
+.to-mymind {
+    font-family: 'Anton', sans-serif, ;
+    font-style: italic;
+    font-size: 107px; 
+}
+#slogan {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em; 
+    color: #FF6F61; 
+    font-style: italic; 
+    text-align: center; 
+    margin: 10px 0; 
+}
+
+
+
+#homepage p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #789DBC;
+    margin-left: -263px;
+    
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px; /* Adjust gap for mobile */
+    }
+
+    #homepage {
+        padding-left: 0;
+    }
+}
+
+
+
+
+/* Circle styling for each letter in the word 'BLOG' */
+#head {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+    right: 187px;
+    transform: translateY(-100px)
+}
+
+.circle {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Creates the circle shape */
+    background-color: #789DBC; /* Teal background */
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 60px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    margin: 5px; /* Reduced space between each letter */
+    box-shadow: 
+    4px 4px 15px rgba(0, 0, 0, 0.2), /* Increased shadow */
+    -4px -4px 15px rgba(255, 255, 255, 0.5); /* Highlight */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.circle:hover {
+    background-color: #FF9AA2; /* Optional: Hover effect */
+    cursor: pointer;
+    box-shadow: 
+        6px 6px 20px rgba(0, 0, 0, 0.3), /* Stronger shadow on hover */
+        -6px -6px 20px rgba(255, 255, 255, 0.7); /* Stronger highlight on hover */
+}
+.blog-icon {
+    width: 74px;
+    height: auto;
+    display: inline-block;
+    margin-right: -16px;
+    vertical-align: middle;
+    margin-top: -21px;
+}
+
+.blog-icon.fa-pen-nib {
+    font-size: 50px; /* For Font Awesome, change the icon size */
+    color: #789DBC; /* Adjust the color to match your theme */
+    margin-right: 10px; /* Space between the icon and the circles */
+    vertical-align: middle;
+}
+#mainContent{
+    margin-left: 152px;
+    width: 100%;
+}
+.container {
+    margin-top: -100px;
+    text-align: center;
+    margin-right: 322px;
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+}
+.container:hover {
+    box-shadow: 
+        8px 8px 20px rgba(0, 0, 0, 0.2), /* Stronger shadow on hover */
+        -8px -8px 20px rgba(255, 255, 255, 0.5); /* Stronger highlight on hover */
+}
+
+
+/* Main content */
+main {
+    margin-right: 220px; /* Account for the right-side navigation */
+    padding: 40px;
+    min-height: 100vh; /* Make sure content covers full height */
+}
+
+main h2 {
+    color: #789DBC;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+#homepage{
+    padding: 12px;
+    text-align: center;
+    position: relative;
+    left: 336px;
+    top: 41px;
+    
+
+}
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Blogs Page */
+
+#blogForm textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+#blogPosts {
+    margin-top: 1rem;
+   
+}
+
+#blogPosts{
+    margin-top: 44px;
+    text-align: center;
+    margin-right: 322px;
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Space inside the box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+#blogPosts:hover {
+    box-shadow: 
+        8px 8px 20px rgba(0, 0, 0, 0.2), /* Stronger shadow on hover */
+        -8px -8px 20px rgba(255, 255, 255, 0.5); /* Stronger highlight on hover */
+}
+
+#blogPosts div {
+    background: #FFE3E3;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    width: auto;
+   
+}
+h3{
+    font-size: 22px;
+    color: #789DBC;
+  
+}
+/* Contact Us Page */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 0.5rem;
+    color: #789DBC;
+    font-size: 15px;
+    font-family: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #789DBC; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f5f; /* Darker color on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ensure the flash cards are below the heading and centered */
+#stress-management {
+    text-align: center;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+/* Style for the heading "Manage Your Stress" */
+#Stress {
+    font-size: 48px;
+    color: #789DBC;
+    margin-bottom: 40px; /* Increased spacing below the heading */
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    text-shadow: 
+    2px 2px 0px rgba(255, 227, 227, 1), 
+    4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+#Stress {
+    margin-bottom: 17px; /* Increased spacing below the heading */
+    display: inline-flex; /* Ensure icon and text stay in the same line */
+    align-items: center; /* Vertically align the icon and text */
+}
+.flash-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Increased gap between flash cards */
+}
+
+
+/* Style for the individual flash cards */
+.flash-card {
+    background-color: #C9E9D2; /* Light green background */
+    border: 2px solid #789DBC; /* Teal border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 571px; /* Fixed width */
+    height: 340px; /* Fixed height */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the card horizontally */
+    position: relative;
+}
+
+/* Title of the exercises */
+.flash-card #exercise-text {
+    font-weight: bold;
+    font-size: 30px; /* Larger font for exercise names */
+    color: #333; /* Darker gray for text */
+    margin-bottom: 10px; /* Adjusted spacing */
+    margin-right: 232px;
+    width: 100%;
+    text-align: justify;
+
+}
+
+/* Description styling */
+.flash-card .description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin: 23px 0;
+    width: 313px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* Timer circle on the right side */
+.flash-card div[id^="timer-"] {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 3px solid #789DBC;
+    border-radius: 50%;
+    display: block;
+    position: absolute; /* Use absolute positioning for better control */
+    top: 50%; /* Center vertically */
+    right: 55px; /* Adjust the horizontal position */
+    transform: translateY(-50%); /* Vertically align */
+    font-size: 18px;
+    color: #789DBC;
+    font-weight: bold;
+    text-align: center; 
+    line-height: 100px;
+}
+
+/* Start Button below the description */
+#start-timer-1 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+
+#start-timer-2 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+
+#start-timer-3 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+#start-timer-4 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+#start-timer-5 {
+    position: relative;
+    margin-top: 2px;
+    background-color: #789DBC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 26px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 225px;
+}
+#stress-management button:hover {
+    background-color: #56789A;
+}
+
+/* Timer font styling */
+#timer {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #789DBC; /* Timer color */
+    font-weight: bold;
+}
+
+/* Ensure the stress icon aligns with the text in the heading */
+.stress-icon {
+    width: 109px; /* Adjust the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the icon with the middle of the text */
+    margin-right: 10px; /* Add some space between the icon and the text */
+}
+
+
+
+
+
+/* Contact Us Page Styles */
+.contact-us-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns the box closer to the top */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding-top: 50px; /* Push down for spacing */
+    background-color: #FEF9F2; /* Set background for full page */
+}
+
+#Contact {
+    background-color: #FEF9F2; /* Light background */
+    padding: 20px; /* Decreased padding for a smaller box */
+    max-width: 600px; /* Decreased max-width for the box */
+    width: 100%; /* Ensure it doesn't overflow on small screens */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+    border: 1px solid #789DBC; /* Border to match color theme */
+    margin-top: -50px; /* Move it slightly upward */
+}
+
+#Contact h2 {
+    color: #789DBC; /* Header color */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#Contact label {
+    display: block;
+    color: #789DBC; /* Label color */
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+}
+
+#Contact input[type="text"],
+#Contact input[type="email"],
+#Contact textarea {
+    width: 100%;
+    padding: 10px; /* Decreased padding for input fields */
+    margin-bottom: 15px; /* Decreased margin for input fields */
+    border: 2px solid #789DBC; /* Border color matching the theme */
+    border-radius: 10px;
+    background-color: #FFE3E3; /* Light input background */
+    color: #333; /* Text color */
+    font-size: 1rem;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05); /* Inner shadow for 3D look */
+}
+
+#Contact button {
+    background-color: #789DBC; /* Button color */
+    color: #FEF9F2; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Increased button font size */
+    display: block; /* Make the button a block-level element */
+    margin: 20px auto; /* Center the button with auto margin */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+#Contact button:hover {
+    background-color: #C9E9D2; /* Button hover color */
+}
+
+
+
+
+
+/* Therapist Section Styles */
+.contact-therapist-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #FEF9F2; /* Set background for full page */
+}
+#therapist {
+    background-color: #FEF9F2; /* Light background */
+    padding: 20px;
+    max-width: 600px;
+
+    width: 100%; /* Ensure it doesn't overflow on small screens */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+    border: 1px solid #789DBC; /* Border to match color theme */
+}
+
+#therapist h2 {
+    color: #789DBC; /* Header color */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#therapist label {
+    display: block;
+    color: #789DBC; /* Label color */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#therapist input[type="text"],
+#therapist input[type="email"],
+#therapist textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #789DBC; /* Changed border to match theme */
+    border-radius: 10px;
+    background-color: #FFE3E3; /* Light input background */
+    color: #333;
+    font-size: 1rem;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05); /* Inner shadow for 3D look */
+}
+
+#therapist button {
+    background-color: #789DBC;
+    color: #FEF9F2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Increased button font size */
+    display: block; /* Make the button a block-level element */
+    margin: 13px auto; /* Center the button with auto margin */
+    transition: background-color 0.3s ease;
+}
+
+#therapist button:hover {
+    background-color: #C9E9D2; /* Button hover color */
+}
+/* Latest Articles Section */
+#latest-articles {
+    margin: 50px auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    margin-top:58px;
+}
+
+#latest-articles h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #789DBC;
+    margin-left: 259px;
+    margin-top: -55px;
+    font-size: 80px;
+    font-style: italic;
+
+    text-shadow: 
+        2px 2px 0px rgba(255, 227, 227, 1), 
+        4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.article{
+    margin-top: -126px;
+    margin-right: -1062px;
+    width: 28%;
+    height: auto;
+
+}
+
+/* Individual Article Card */
+.article-card {
+    background-color: #FFE3E3;
+    padding: 15px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Increased shadow for depth */
+    width: 500px; /* Increased width */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Article Container */
+.articles-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 25px; 
+    justify-content: center; 
+    width: calc(500px * 5 + 20px * 4); 
+    max-width: 100%; 
+    margin-left: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-card {
+        width: 250px; /* Increased width for smaller screens */
+    }
+    .articles-container {
+        gap: 15px; /* Reduced gap */
+    }
+}
+
+/* Hover Effect */
+.article-card:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Other Styles */
+.article-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover img {
+    transform: scale(1.1); /* Slightly larger zoom on image hover */
+}
+
+.article-card h3 {
+    color: #789DBC;
+    font-size: 1.6rem; /* Increased font size */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Links */
+.article-card a {
+    text-decoration: none;
+    color: #789DBC;
+    transition: color 0.3s ease-in-out;
+}
+
+.article-card a:hover {
+    color: #FF6F61;
+}
+
+
+/* FAQ Topic Header */
+#faq-topic {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+    color: #789DBC;
+    font-size: 48px;
+    font-style: italic;
+    margin-left: 199px;
+    text-shadow: 
+        2px 2px 0px rgba(255, 227, 227, 1),
+        4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ Container Styling */
+.faq-container {
+    width: 85%;
+    margin: 0 auto;
+    margin-left: 190px;
+    margin-top: -91px;
+    padding: 30px;
+    background-color: #FFE3E3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual FAQ Items */
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Question Titles */
+.faq-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    color: #789DBC;
+    padding: 10px 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    outline: none; /* Remove focus outline */
+}
+
+.faq-title:hover {
+    color: black;
+}
+.faq-content:hover {
+    color: black;
+}
+
+/* Prevent background color on click */
+.faq-title:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+/* Toggle Icon Styling */
+.toggle-icon {
+    font-size: 24px;
+    color: #789DBC;
+    transition: transform 0.3s ease;
+}
+
+.faq-title.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
+/* FAQ Content Styling */
+.faq-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.7;
+    color:  #4190d1;
+    padding-left: 10px;
+}
+
+.faq-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.faq-content ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.faq-content ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color:  #4190d1;
+    font-size: 20px;
+}
+.cloud1{
+    width: 35%;
+    margin-left: 701px;
+    margin-top: -131px;
+}
+#about-us {
+    background-color: #FEF9F2;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between image and text */
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 55%; /* Increase image container to 55% of the total width */
+    padding: 20px;
+}
+
+.about-image {
+    width: 115%; /* The image will take full width of its container */
+    border-radius: 20px;
+}
+
+.text-content {
+    flex: 2;
+    margin-left: 0;
+    margin-right: -216px;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    max-width: 1000px;
+    line-height: 1.6;
+    font-style: italic;
+    color:#789DBC;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Space between image and text */
+    flex-wrap: nowrap; /* Prevent wrapping of the elements */
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 1200px; /* Adjust max-width for the entire content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+
+.text-content h2 {
+    color: #789DBC;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #789DBC;
+
+}
+
+/* Button Styles */
+.about-content .read-more {
+    display: inline-block;
+    background-color: #789DBC;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.about-content .read-more:hover {
+    background-color: #007D7A;
+}
+
+/* Header Styling */
+.text-content h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+    color: #789DBC;
+    font-size: 80px;
+    font-style: italic;
+    text-shadow: 
+        2px 2px 0px rgba(255, 227, 227, 1),
+        4px 4px 0px rgba(0, 0, 0, 0.3);
+}

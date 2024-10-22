@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mymind-Stress Management </title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>MyMind</h1>
+        <img src="logo.png" alt="MyMind Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="stress-management.html">Stress Management</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="therapist.html">Therapist Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+   <section id="stress-management">
+        <h2 id="Stress"> <img src="Stress.png" alt="Stress Icon" class="stress-icon"> Manage Your Stress </h2>
+        <div class="flash-card-container">
+            <div class="flash-card">
+                <p id="exercise-text">Box Breathing</p>
+                <p class="description">Inhale through your nose for 4 counts, hold for 4 counts, exhale through your mouth for 4 counts, and hold again for 4 counts. Repeat.</p>
+                <button id="start-timer-1" onclick="startTimer('timer-1', 'start-timer-1', 20)">Start</button>
+                <div id="timer-1">20</div>
+                
+            </div>
+
+            <div class="flash-card">
+                <p id="exercise-text">Deep Breathing</p>
+                <p class="description">Sit or lie down, place one hand on your chest and the other on your abdomen. Breathe deeply through your nose, letting your abdomen rise, then exhale slowly through your mouth.</p>
+                <button id="start-timer-2"  onclick="startTimer('timer-2', 'start-timer-2', 20)">Start</button>
+                <div id="timer-2">20</div>
+            </div>
+
+            <div class="flash-card">
+                <p id="exercise-text">4-7-8 Breathing</p>
+                <p class="description">Sit comfortably with a straight back. Inhale for 4 counts, hold for 7 counts, and exhale with a whoosh for 8 counts. Repeat.</p>
+                <button id="start-timer-3"  onclick="startTimer('timer-3', 'start-timer-3', 20)">Start</button>
+                <div id="timer-3">20</div>
+            </div>
+
+            <div class="flash-card">
+                <p id="exercise-text">Diaphragmatic Breathing</p>
+                <p class="description">Lie down or sit comfortably. Place one hand on your chest, the other on your abdomen. Inhale slowly through your nose, letting your stomach rise, then exhale slowly through pursed lips.</p>
+                <button id="start-timer-4"  onclick="startTimer('timer-4', 'start-timer-4', 20)">Start</button>
+                <div id="timer-4">20</div>
+            </div>
+
+            <div class="flash-card">
+                <p id="exercise-text">Resonance Breathing</p>
+                <p class="description">Breathe in for a count of 5 and then out for a count of 5. Keep the breathing smooth and even, and continue for 5 to 10 minutes.</p>
+                <button id="start-timer-5"  onclick="startTimer('timer-5', 'start-timer-5', 20)">Start</button>
+                <div id="timer-5">20</div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="start-sound" src="audio.mp3" preload="auto"></audio>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Management - Mymind</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Stress Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="stress-management.html">Stress Management</a></li>
+                <li><a href="therapist-contact.html">Therapist Contact</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stress-management">
+            <h2>Manage Your Stress</h2>
+            <div class="flash-card-container">
+                <div class="flash-card">
+                    <p id="exercise-text">Box Breathing</p>
+                    <p class="description1">Inhale through your nose for 4 counts, hold for 4 counts, exhale through your mouth for 4 counts, and hold again for 4 counts. Repeat.</p>
+                    <button id="start-timer-1">Start</button>
+                    <div id="timer-1">20</div>
+                </div>
+
+                <div class="flash-card">
+                    <p id="exercise-text">Deep Breathing</p>
+                    <p class="description2">Sit or lie down, place one hand on your chest and the other on your abdomen. Breathe deeply through your nose, letting your abdomen rise, then exhale slowly through your mouth.</p>
+                    <button id="start-timer-2">Start</button>
+                    <div id="timer-2">20</div>
+                </div>
+
+                <div class="flash-card">
+                    <p id="exercise-text">4-7-8 Breathing</p>
+                    <p class="description3">Sit comfortably with a straight back. Inhale for 4 counts, hold for 7 counts, and exhale with a whoosh for 8 counts. Repeat.</p>
+                    <button id="start-timer-3">Start</button>
+                    <div id="timer-3">20</div>
+                </div>
+
+                <div class="flash-card">
+                    <p id="exercise-text">Diaphragmatic Breathing</p>
+                    <p class="description4">Lie down or sit comfortably. Place one hand on your chest, the other on your abdomen. Inhale slowly through your nose, letting your stomach rise, then exhale slowly through pursed lips.</p>
+                    <button id="start-timer-4">Start</button>
+                    <div id="timer-4">20</div>
+                </div>
+
+                <div class="flash-card">
+                    <p id="exercise-text">Resonance Breathing</p>
+                    <p class="description5">Breathe in for a count of 5 and then out for a count of 5. Keep the breathing smooth and even, and continue for 5 to 10 minutes.</p>
+                    <button id="start-timer-5">Start</button>
+                    <div id="timer-5">20</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mymind. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html> -->
